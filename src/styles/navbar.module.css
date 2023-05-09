@@ -1,0 +1,147 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    
+  }
+  
+  .logoName {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 3;
+  }
+  .navbar__logo2{
+    color: var(--primary-orange);
+  }
+  .menu__icon {
+    cursor: pointer;
+    width: auto;
+    z-index: 3;
+    
+  }
+  
+ 
+  .menu {
+    position: absolute;
+    top: -1500px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-yellow);
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    /* transition: all 0.4s cubic-bezier(.95,.05,.8,.04) */
+  }
+  .menu > li {
+    margin: 2rem;
+  }
+  .menu__wrap {
+    width:90% ;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .menu__ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4rem;
+    
+  }
+  
+  .menu__ul > li > a {
+    color: var(--black);
+    font-size: 3.4  rem;
+    letter-spacing: 2px;
+  }
+  
+  .menu__txt{
+    font-size: 2.1rem;
+    
+  }  
+  .menu__txt[class*="currentLink"] {
+    text-decoration: line-through;
+  }
+
+  .menu__info{
+    display: none;
+  }
+  @media screen and (min-width: 768px){
+    .menu__ul > li > a {
+    
+      font-size: 4.2rem;
+      letter-spacing: 2px;
+    }
+    .menu__wrap{
+      width:70% ;
+      height: 40%;
+    
+  
+    }
+  } 
+
+@media screen and (min-width: 1020px) {
+  .navbar {
+    padding: 2% 7% 0 7%;
+    
+    
+  }
+  .menu__wrap{
+    width: 68%;
+    height: 50%;
+    justify-content: center;
+
+  }
+  .menu__ul{
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: baseline;
+    width: inherit;
+  }
+  .menu__wrap{
+    width:60%; 
+
+  }
+  .menu__info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .menu__h2{
+    color: var(--black);
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: .01em;
+  }
+  .menu__p {
+    color: var(--black);
+    line-height: 180%;
+    font-weight: 400;
+    text-align: left;
+  }
+
+
+  .menu__ul > li > a {
+    
+    font-size: 4.2rem;
+    letter-spacing: 2px;
+  }
+}
