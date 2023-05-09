@@ -8,6 +8,11 @@ import styles from "../../styles/hero.module.css"
 
 export default function Hero() {
     const [startAnimation, setStartAnimation] = useState(false)
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleHover = () => {
+        setIsHovered(!isHovered);
+    };
     useEffect(() => {
         setStartAnimation(true);
       }, []);
@@ -74,37 +79,54 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <motion.div className={styles.hero__container}>
-        <motion.h1 className={styles.hero__h1}
-            variants={variants}
-            initial="first"
-            animate={startAnimation ? "aligned" : "first"}
-
-        >David Hernandez.</motion.h1>
-        <motion.div className={styles.hero__textWrap}
-            variants={variants}
-            initial="second"
-            animate={startAnimation ? "aligned2" : "second"}
+        <motion.h1
+          className={styles.hero__h1}
+          variants={variants}
+          initial="first"
+          animate={startAnimation ? "aligned" : "first"}
+        >
+          David Hernandez.
+        </motion.h1>
+        <motion.div
+          className={styles.hero__textWrap}
+          variants={variants}
+          initial="second"
+          animate={startAnimation ? "aligned2" : "second"}
         >
           <span className={styles.hero__span}></span>
           <p className={styles.hero__subtitle}>Front-end Developer</p>
         </motion.div>
-        <motion.p className={styles.hero__info}
-            variants={variants}
-            initial="third"
-            animate={startAnimation ? "aligned3" : "third"}>
+        <motion.p
+          className={styles.hero__info}
+          variants={variants}
+          initial="third"
+          animate={startAnimation ? "aligned3" : "third"}
+        >
           Halifax-based front-end developer with a passion for tech. Skilled
           graduate of Skills for Hire and Npower Canada. Coffee and nature
-          enthusiast{" "}   
+          enthusiast{" "}
         </motion.p>
       </motion.div>
 
-      <motion.div className={styles.project}
-            variants={variants}
-            initial="fourth"
-            animate={startAnimation ? "aligned4" : "fourth"}
+      <motion.div
+        className={styles.project}
+        variants={variants}
+        initial="fourth"
+        animate={startAnimation ? "aligned4" : "fourth"}
       >
         <aside className={styles.project__wrapper}>
-          <Image className={styles.projectImage} src={image1} alt="Acapulco en la piel project" />
+          <Link href='/projects'>
+            <Image
+              className={styles.projectImage}
+              src={image1}
+              alt="Acapulco en la piel project"
+            />
+            <motion.div className={styles.viewProject}
+            whileHover={{opacity:1} }
+            >
+             <p>View this project </p>
+            </motion.div>
+          </Link>
           <button className={styles.button}>
             <Link href="/projects">See all projects</Link>
           </button>
