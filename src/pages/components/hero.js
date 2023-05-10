@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion, useAnimationControls  } from 'framer-motion'
+import { motion } from 'framer-motion'
 import image1 from '../../../public/images/acapulcoEnlaPiel.jpg'
 import styles from "../../styles/hero.module.css"
 
@@ -10,9 +10,7 @@ export default function Hero() {
     const [startAnimation, setStartAnimation] = useState(false)
     const [isHovered, setIsHovered] = useState(false);
 
-    const handleHover = () => {
-        setIsHovered(!isHovered);
-    };
+   
     useEffect(() => {
         setStartAnimation(true);
       }, []);
@@ -102,9 +100,7 @@ export default function Hero() {
           initial="third"
           animate={startAnimation ? "aligned3" : "third"}
         >
-          Halifax-based front-end developer with a passion for tech. Skilled
-          graduate of Skills for Hire and Npower Canada. Coffee and nature
-          enthusiast{" "}
+          Website developed for a tourism Youtuber based in Acapulco Guerrero.
         </motion.p>
       </motion.div>
 
