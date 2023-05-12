@@ -1,0 +1,37 @@
+.skillSection{
+    background-color: var(--white);
+    padding: 5rem 1.5rem 0 1.5rem;
+}
+.skills__heading{
+    color: var(--black);
+    margin-bottom: 3rem;
+}
+.skillset {
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media screen and (min-width: 568px) {
+    .skillSection{
+        height: 420px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .skillSection{
+        height: 465px;
+        padding: 6% 10% 0 10%;
+    }
+    
+    .skills__heading{
+        font-size: 3rem;
+    }
+
+    
+}

@@ -81,7 +81,17 @@
   .viewProject{
     display: none;
   }
-@media screen and (min-width: 1028px) {
+  @media screen and (min-width: 768px) {
+    .hero{
+        height: 790px;
+    }
+  }
+  @media screen and (min-width: 840px) {
+    .hero{
+        height: 899px;
+    }
+  }
+@media screen and (min-width: 1020px) {
 
     .hero {
         display: flex;
@@ -89,7 +99,7 @@
         align-items: center;
         justify-content: center;
         width: 80%;
-        height: 100dvh;
+        height: 105dvh;
         margin: 0 auto;
     }
     .hero__container{
@@ -116,7 +126,7 @@
     .viewProject{
         position: absolute;
         display: flex;
-        align-items: end;        width: 100%;
+        align-items: flex-end;        width: 100%;
         height: 100%;
         opacity: 0;
         top: 0;
