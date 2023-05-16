@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Layout title={"Home"}>
         <Hero />
-        <section className={styles.aboutSection}>
+        <section className={` ${styles.aboutSection}`}>
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y:15 }} // Initial state: invisible

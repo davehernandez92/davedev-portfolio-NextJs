@@ -8,7 +8,7 @@ import styles from "../../styles/hero.module.css"
 
 export default function Hero() {
     const [startAnimation, setStartAnimation] = useState(false)
-    const [isHovered, setIsHovered] = useState(false);
+    
 
    
     useEffect(() => {
@@ -75,7 +75,7 @@ export default function Hero() {
     }
 
   return (
-    <div className={styles.hero}>
+    <div className={` ${styles.hero}`}>
       <motion.div className={styles.hero__container}>
         <motion.h1
           className={styles.hero__h1}

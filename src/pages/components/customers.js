@@ -11,23 +11,49 @@ export default function Customers() {
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.1,
-      });
+      });   
     const listItemVariants = {
-        initial: { opacity: 0, x: -25 },
-        animate: { opacity: 1, x: 0 }
+        initial: { opacity: 0, y: 25 },
+        animate: { opacity: 1, y: 0 }
       };
   return (
-    <div className={styles.skillSection}>
-      <motion.div className={styles.skills__wrap}>
-        <h2 className={styles.skills__heading}>Friends I've made on the way </h2>
+    <div className={` section ${styles.customerSection}`}>
+      <motion.div className={styles.customers__wrap}
+            variants={listItemVariants}
+            initial="initial"
+            animate={inView ? 'animate' : 'initial'}
+            transition={{ delay: 0, duration: .5 }}
+      >
+        <h1 className={styles.customers__heading}>Friends I've made along the way. </h1>
 
-        <motion.ul className={styles.skillset} ref={ref}>
+        <motion.ul className={styles.customerset} ref={ref}>
             <Image
               className={styles.projectImage}
               src={acapulco}
               alt="Acapulco en la piel logo"
-              width={70}
-              height={70}
+              width={90}
+              height={90}
+            />
+            <Image
+              className={styles.projectImage}
+              src={acapulco}
+              alt="Acapulco en la piel logo"
+              width={90}
+              height={90}
+            />
+            <Image
+              className={styles.projectImage}
+              src={acapulco}
+              alt="Acapulco en la piel logo"
+              width={90}
+              height={90}
+            />
+            <Image
+              className={styles.projectImage}
+              src={acapulco}
+              alt="Acapulco en la piel logo"
+              width={90}
+              height={90}
             />
         </motion.ul>
       </motion.div>

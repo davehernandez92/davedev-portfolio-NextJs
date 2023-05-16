@@ -18,7 +18,7 @@ export default function Skills() {
         animate: { opacity: 1, x: 0 }
       };
   return (
-    <div className={styles.skillSection}>
+    <div className={`section ${styles.skillSection}`}>
       <motion.div className={styles.skills__wrap}>
         <h2 className={styles.skills__heading}>Here's my tech kit: </h2>
 
