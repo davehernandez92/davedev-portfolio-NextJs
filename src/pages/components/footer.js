@@ -27,7 +27,7 @@ export default function Footer() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0, duration: .5 }}
+            transition={{ delay: 0.4, duration: .5 }}
           >
           Let's design something<span className={styles.footer__span}>together?</span></motion.h2>
           <button className={styles.button}>
@@ -40,7 +40,7 @@ export default function Footer() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0, duration: .5 }}
+            transition={{ delay: 0.4, duration: .5 }}
           >You can find me on <span className={styles.footer__span2}>social media</span>:</motion.h2>
           <ul className={styles.socials__list}>
             <Link href="/contact"><motion.p whileHover={{ letterSpacing: '0.4rem', color: '#CCCC33', transition: { duration: 0.4 } }}>LinkedIn</motion.p></Link>
