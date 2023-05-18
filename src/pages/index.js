@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import Link from "next/link"
 import Layout from "./components/layout"
-import styles from '@/styles/home.module.css'
+import styles from "../styles/home.module.css"
 import Hero from "./components/hero"
 import Skills from "./components/skills";
 import Customers from "./components/customers";
