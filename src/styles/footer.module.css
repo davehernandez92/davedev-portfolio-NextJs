@@ -1,0 +1,116 @@
+.footer{
+    padding: 5rem 1.5rem 0 1.5rem;
+}
+.footer__wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 1.5rem;
+}   
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.footer__heading {
+    font-size: 29px;
+    line-height: 130%;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: .01em;
+    
+}
+
+.footer__span{
+    font-size: 29px;
+    line-height: 130%;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: .01em;
+    margin-left: 0.6rem;
+    color: var(--primary-orange);
+    font-family: var(--heading-font);
+}
+
+.button a {
+    color: var(--white);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color:transparent;
+    transition: all .3s ease;
+  }
+  .button {
+    border: 2px solid var(--primary-orange);
+    background-color: transparent;
+    text-align: center; 
+    display: inline-block; 
+    cursor: pointer; 
+    width: 135px;
+    height: 45px;
+    transition: all .3s ease;
+  }
+  .button:hover{
+    border: none;
+    background-color: var(--secondary-yellow)
+    
+  }
+  .button:hover a {
+    color: var(--black);
+  }
+  .socials{
+    display: flex;
+    flex-direction: column;
+    height: 26rem;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+
+  .socials__heading{
+    font-size: 29px;
+    line-height: 130%;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: .01em;
+}
+.footer__span2{
+    color: var(--secondary-yellow);
+}
+
+.socials__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+.socials__list p {
+    display: flex;
+    justify-content: flex-start;
+    width: 15rem ;
+}
+
+.copyright{
+    margin: 2rem auto;
+}
+
+.copyright p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+  
+@media screen and (min-width: 768px) {
+    .footer__wrapper{
+        height: 465px;
+        padding: 6% 10% 0 10%;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .socials{
+        height: 20rem;
+        justify-content: space-between;
+    }
+}

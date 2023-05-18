@@ -24,9 +24,13 @@
 }
 
 .projectImage{
-    background-color: black;
+    
     width: 100px;
     height: auto;
+    transition: all .3s ease;
+}
+.projectImage:hover{
+    opacity: .6;
 }
 @media screen and (min-width: 568px) {
     .customerSection{

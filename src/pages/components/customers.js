@@ -31,29 +31,29 @@ export default function Customers() {
               className={styles.projectImage}
               src={acapulco}
               alt="Acapulco en la piel logo"
-              width={90}
-              height={90}
+              width={80}
+              height={80}
             />
             <Image
               className={styles.projectImage}
               src={acapulco}
               alt="Acapulco en la piel logo"
-              width={90}
-              height={90}
+              width={80}
+              height={80}
             />
             <Image
               className={styles.projectImage}
               src={acapulco}
               alt="Acapulco en la piel logo"
-              width={90}
-              height={90}
+              width={80}
+              height={80}
             />
             <Image
               className={styles.projectImage}
               src={acapulco}
               alt="Acapulco en la piel logo"
-              width={90}
-              height={90}
+              width={80}
+              height={80}
             />
         </motion.ul>
       </motion.div>
