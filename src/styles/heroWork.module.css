@@ -1,0 +1,109 @@
+.hero{
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+}
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 1.5rem 0 1.5rem;
+    
+
+
+}
+.hero__h1{
+    font-size: 3.6rem;
+    width: 70%;
+    line-height: 130%;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+.hero__textWrap{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.hero__span{
+    width: 0.5rem;
+    height: 2rem;
+    display: inline-block;
+    background-color: var(--secondary-yellow);
+}
+.hero__subtitle{
+    color: var(--secondary-yellow);
+}
+
+.hero__info{
+    margin-top: 3rem;
+    letter-spacing: .01rem;
+}
+.project{
+    margin-top: 5rem;
+    
+}
+.project__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.projectImage{
+    width: 100%;
+    height: auto;
+
+}
+  @media screen and (min-width: 768px) {
+    .hero{
+        height: 790px;
+    }
+  }
+  @media screen and (min-width: 840px) {
+    .hero{
+        height: 899px;
+    }
+  }
+@media screen and (min-width: 1020px) {
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 105dvh;
+        margin: 0 auto;
+    }
+    .hero__container{
+        margin: 20rem 0;
+        padding: 2% 10% 0 0;
+    }
+
+    .project{
+        margin: 0;
+        position: relative;
+    }
+    .button{
+        position: absolute;
+        bottom: -90px;
+        right: -60px;   
+    }
+    .button a{
+        font-size: 1.6rem;
+    }
+    .projectImage{
+        position: relative;
+    }
+    
+    .viewProject{
+        position: absolute;
+        display: flex;
+        align-items: flex-end;        width: 100%;
+        height: 100%;
+        opacity: 0;
+        top: 0;
+        background-color: #1d1d1d96;
+    }
+    .viewProject p {
+        width: 70%;
+        margin: 0 auto 5rem auto;
+        text-align: center;
+    }
+}
