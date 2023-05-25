@@ -14,10 +14,10 @@ export default function Navbar() {
 
 
 
-    const logoHoverAnimation = {
-      scale: 1.1,
-      transition: { duration: 0.5 },
-    };
+  const logoHoverAnimation = {
+    scale: 1.1,
+    transition: { duration: 0.5 },
+  };
 
   const svgVariants = {
     open: {
@@ -44,70 +44,65 @@ export default function Navbar() {
 
   const pathVariants = {
     open1: {
-        opacity: 1,
-        y: 7.5,
-        x: 1,
-        rotate: 45,
-        transition: {
-          duration: 0.2,
-          
-        },
+      opacity: 1,
+      y: 7.5,
+      x: 1,
+      rotate: 45,
+      transition: {
+        duration: 0.2,
       },
-      open2: {
-        opacity: 0,
-        x: 20,
-        rotate: 0,
-        transition: {
-          duration: 0.3,
-         
-         
-        },
+    },
+    open2: {
+      opacity: 0,
+      x: 20,
+      rotate: 0,
+      transition: {
+        duration: 0.3,
       },
-      open3: {
-        opacity: 1,
-        y: -7.5,
-        rotate: -45,
-        transition: {
-          duration: 0.2,
-         
-        },
+    },
+    open3: {
+      opacity: 1,
+      y: -7.5,
+      rotate: -45,
+      transition: {
+        duration: 0.2,
       },
-      hover1: {
-        y: -4,
-        transition: {
-          duration: 1.2,
-          delay:0.1,
-        },
+    },
+    hover1: {
+      y: -4,
+      transition: {
+        duration: 1.2,
+        delay: 0.1,
       },
-      hover2: {
-        x: -2,
-        transition: {
-          duration: 1.2,
-          delay:0.13,
-        },
+    },
+    hover2: {
+      x: -2,
+      transition: {
+        duration: 1.2,
+        delay: 0.13,
       },
-      hover3: {
-        y: 4,
-        transition: {
-          duration: 1.2,
-          delay:0.16,
-        },
+    },
+    hover3: {
+      y: 4,
+      transition: {
+        duration: 1.2,
+        delay: 0.16,
       },
-      closed: {
-        opacity: 1,
-        x: 0,
-        y:0,
-        rotate: 0,
-        
+    },
+    closed: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      rotate: 0,
+    },
+    hidden: {
+      opacity: 0,
+      x: -24,
+      transition: {
+        duration: 0.15,
       },
-      hidden: {
-        opacity: 0,
-        x: -24,
-        transition: {
-          duration: 0.15,
-        },
-      },
-    };
+    },
+  };
 
   const dropDmenuVariants = {
     menuOpen: {
@@ -115,18 +110,17 @@ export default function Navbar() {
       y: 1500,
       transition: {
         duration: 0.6,
-        
       },
     },
     menuClose: {
       opacity: 0,
       y: -1500,
       transition: {
-        delay: .5,
+        delay: 0.5,
         duration: 2.7,
-      }
-    }
-  }
+      },
+    },
+  };
   const listMenuVariants = {
     fadeIn: {
       opacity: 1,
@@ -135,8 +129,7 @@ export default function Navbar() {
         type: "spring",
         stiffness: 260,
         damping: 20,
-        delay: .7,
-        
+        delay: 0.7,
       },
     },
     fadeIn2: {
@@ -146,8 +139,7 @@ export default function Navbar() {
         type: "spring",
         stiffness: 260,
         damping: 20,
-        delay: .8,
-        
+        delay: 0.8,
       },
     },
     fadeIn3: {
@@ -157,7 +149,7 @@ export default function Navbar() {
         type: "spring",
         stiffness: 260,
         damping: 20,
-        delay: .9,
+        delay: 0.9,
       },
     },
     fadeIn4: {
@@ -177,10 +169,10 @@ export default function Navbar() {
         type: "spring",
         stiffness: 160,
         damping: 20,
-        delay: .2,
+        delay: 0.2,
       },
-    },  
-  }
+    },
+  };
 
   const menuInfoVariants = {
     fadeIn: {
@@ -190,8 +182,7 @@ export default function Navbar() {
         type: "spring",
         stiffness: 120,
         damping: 20,
-        delay: .5,
-        
+        delay: 0.5,
       },
     },
     fadeOut: {
@@ -201,10 +192,10 @@ export default function Navbar() {
         type: "spring",
         stiffness: 160,
         damping: 20,
-        delay: .1,
+        delay: 0.1,
       },
-    },  
-  }
+    },
+  };
   
   useEffect(() => {
     const handleScroll = () => {

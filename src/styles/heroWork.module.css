@@ -1,7 +1,14 @@
 .hero{
     width: 100%;
-    height: 700px;
-    background-color: #000;
+    height: 100dvh;
+    background-image: url('../../public/images/background1.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+   
+
+   
 }
 .hero__container{
     display: flex;
@@ -45,11 +52,61 @@
     display: flex;
     flex-direction: column;
 }
-.projectImage{
-    width: 100%;
-    height: auto;
 
-}
+.container {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.container:hover{
+    cursor: pointer;
+}  
+
+  .pulse {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-yellow);
+    opacity: 0.7;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    animation: waveAnimation 1.5s ease-in-out forwards infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+ .fullScreenSlide{
+    background-color: var(--grey);
+    height: 100vh;
+    width: 99dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+ }
+  
+  
+  @keyframes waveAnimation {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+  }
+  
+ 
+  
+
   @media screen and (min-width: 768px) {
     .hero{
         height: 790px;
@@ -63,12 +120,13 @@
 @media screen and (min-width: 1020px) {
 
     .hero {
-        display: flex;
+        
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        height: 105dvh;
+        gap: 0;
+        width: 100%;
+        height: 100dvh;
         margin: 0 auto;
     }
     .hero__container{

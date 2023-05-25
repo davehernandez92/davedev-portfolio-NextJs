@@ -1,9 +1,10 @@
 :root {
-  --primary-orange: #C70D3A;
+  --primary-orange: #C62C2C;
   --white: #fefefe;
-  --secondary-yellow: #CCCC33;
+  --secondary-yellow: #f9a947;
   --black: #101010;
   --background: #000;
+  --grey: #333333;
  
   --primary-font:  'DM Sans', sans-serif;
   --heading-font: 'Ubuntu', sans-serif;

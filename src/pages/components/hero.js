@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import image1 from '../../../public/images/acapulcoEnlaPiel.jpg'
+import image1 from '../../../public/images/acapulcoEnlaPiel.webp'
 import styles from "../../styles/hero.module.css"
 
 
