@@ -81,19 +81,7 @@
     
   }
 
- .fullScreenSlide{
-    background-color: var(--grey);
-    height: 100vh;
-    width: 99dvw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
- }
-  
+ 
   
   @keyframes waveAnimation {
     0% {
@@ -103,6 +91,51 @@
       box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
     }
   }
+  .fullScreenSlide{
+    background-color: var(--grey);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4rem;
+
+ }
+  
+  .project__wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0 0 0;
+  }
+  
+  .project__title{
+    font-size: 22px;
+    line-height: 130%;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin: 1rem 0;
+  }
+  .project__text{
+    line-height: 180%;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    
+  }
+
+  .project__icons{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .techIcon{
+    width: 2.5rem;
+    height: auto;
+  }
+
+  .project__view{
+    letter-spacing: .07em;
+    margin-bottom: 2rem;
+  }
+
+
   
  
   
