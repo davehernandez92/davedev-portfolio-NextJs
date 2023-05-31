@@ -5,20 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
-import { IoLogoJavascript, IoLogoCss3, IoLogoPython } from "react-icons/io";
-import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiStrapi,
-  SiPrisma,
-  SiAmazonaws,
-  SiRemix,
-  SiMongodb,
-  SiGraphql,
-} from "react-icons/si";
-import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-
-import acapulco from "../../../public/images/acapulcoEnlaPiel.webp";
+import acapulco from "../../../public/images/acapulcoEnlaPiel.jpg";
 
 import styles from "../../styles/heroWork.module.css";
 
@@ -67,7 +54,7 @@ export default function HeroWork() {
             className={styles.hero__h1}
             initial={animateVariants.initial}
             animate={
-              (isClicked ) ? animateVariants.animate : animateVariants.initial
+              isClicked ? animateVariants.animate : animateVariants.initial
             }
             transition={{ delay: 0.3, duration: 0.5 }}
           >
@@ -111,70 +98,52 @@ export default function HeroWork() {
           >
             <h2>Jump in</h2>
           </motion.div>
-
-          
-          
-        
-
         </div>
       </motion.div>
 
-      <motion.div
-            id="fullScreenSlide"
-            className={styles.fullScreenSlide}
-            
-          >
-            {/* Projects */}
-            <div className={styles.project__wrap}>
-              <Link href={"/"} className={styles.project__wrapLink}>
-                <Image
-                  src={acapulco}
-                  priority={true}
-                  alt="Project Acapulco en la Piel"
-                  className={styles.project__img}
-                  height={300}
-                  width={550}
-                />
-                <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
-                <p className={styles.project__text}>
-                  {" "}
-                  Website made for a Youtuber based in Acapulco, Mexico.{" "}
-                </p>
-                <div className={styles.project__icons}>
-                  <IoLogoJavascript className={styles.techIcon} />
-                  <IoLogoCss3 className={styles.techIcon} />
-                  <SiNextdotjs className={styles.techIcon} />
-                  <SiStrapi className={styles.techIcon} />
-                </div>
-                <p className={`${styles.project__view}`}>View Project</p>
-              </Link>
-            </div>
+      <motion.div id="fullScreenSlide" className={styles.fullScreenSlide}>
+        {/* Projects */}
+        <div className={styles.project__wrap}>
+          <Link href={"/"} className={styles.project__wrapLink}>
+            <Image
+              src={acapulco}
+              priority={true}
+              alt="Project Acapulco en la Piel"
+              className={styles.project__img}
+              height={300}
+              width={550}
+            />
+            <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
+            <div className={styles.project__stack}>
+              <p className={styles.project__text}>Next.js</p>
+              <p className={styles.project__text}>Strapi</p>
+              <p className={styles.project__text}>CSS modules</p>
+            </div>  
 
-            <div className={styles.project__wrap}>
-              <Link href={"/"} className={styles.project__wrapLink}>
-                <Image
-                  src={acapulco}
-                  priority={true}
-                  alt="Project Acapulco en la Piel"
-                  className={styles.project__img}
-                  height={300}
-                  width={550}
-                />
-                <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
-                <p className={styles.project__text}>
-                  {" "}
-                  Website made for a Youtuber based in Acapulco, Mexico.{" "}
-                </p>
-                <div className={styles.project__icons}>
-                  <IoLogoJavascript className={styles.techIcon} />
-                  <IoLogoCss3 className={styles.techIcon} />
-                  <SiNextdotjs className={styles.techIcon} />
-                  <SiStrapi className={styles.techIcon} />
-                </div>
-                <p className={`${styles.project__view}`}>View Project</p>
-              </Link>
-            </div>
-          </motion.div>
+            <p className={`${styles.project__view}`}>View Project</p>
+          </Link>
+        </div>
+
+        <div className={styles.project__wrap}>
+          <Link href={"/"} className={styles.project__wrapLink}>
+            <Image
+              src={acapulco}
+              priority={true}
+              alt="Project Acapulco en la Piel"
+              className={styles.project__img}
+              height={300}
+              width={550}
+            />
+            <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
+            <div className={styles.project__stack}>
+              <p className={styles.project__text}>Next.js</p>
+              <p className={styles.project__text}>Strapi</p>
+              <p className={styles.project__text}>CSS modules</p>
+            </div> 
+            <p className={`${styles.project__view}`}>View Project</p>
+          </Link>
+        </div>
+      </motion.div>
     </>
   );
 }
