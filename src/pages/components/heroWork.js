@@ -1,24 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useInView } from "framer-motion";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import acapulco from "../../../public/images/acapulcoEnlaPiel.jpg";
 
 import styles from "../../styles/heroWork.module.css";
 
 export default function HeroWork() {
   const [isClicked, setIsClicked] = useState(false);
-  const { ref } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
   
+  const ref1 = useRef(null);
+  const isInView = useInView(ref1, { once: true });
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true });
+  
+  useEffect(() => {
+    console.log("Element is in view: ", isInView)
+  }, [isInView])
+
   const handleClick = () => {
     setIsClicked(true);
-      
   };
 
   const animateVariants = {
@@ -35,6 +38,7 @@ export default function HeroWork() {
     animate: { opacity: 0, y: 15 },
     initial: { opacity: 1, y: 0 },
   };
+  
 
 
 
@@ -43,7 +47,6 @@ export default function HeroWork() {
     <>
       <motion.div
         className={` ${styles.hero}`}
-        ref={ref}
         initial={{ opacity: 0, y: 15 }} // Initial state: invisible
         animate={{ opacity: 1, y: 0 }} // Animation state: visible if in view, otherwise invisible and y position at -15
         transition={{ delay: 0.3, duration: 0.5 }} // Delay of 0.5s
@@ -87,7 +90,6 @@ export default function HeroWork() {
         {/* Jump in click  */}
         <div className={styles.container}>
           <motion.div
-            ref={ref}
             className={`${styles.pulse}`}
             onClick={handleClick}
             initial={animateVariants3.initial}
@@ -103,46 +105,65 @@ export default function HeroWork() {
 
       <motion.div id="fullScreenSlide" className={styles.fullScreenSlide}>
         {/* Projects */}
-        <div className={styles.project__wrap}>
+        <motion.div
+          className={styles.project__wrap}
+          ref={ref1}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : ""}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <Link href={"/"} className={styles.project__wrapLink}>
-            <Image
-              src={acapulco}
-              priority={true}
-              alt="Project Acapulco en la Piel"
-              className={styles.project__img}
-              height={300}
-              width={550}
-            />
+            <motion.div className={styles.img__div}>
+              <Image
+                src={acapulco}
+                priority={true}
+                alt="Project Acapulco en la Piel"
+                className={styles.project__img}
+                height={300}
+                width={550}
+              />
+            </motion.div>
+
             <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
             <div className={styles.project__stack}>
               <p className={styles.project__text}>Next.js</p>
               <p className={styles.project__text}>Strapi</p>
               <p className={styles.project__text}>CSS modules</p>
-            </div>  
+            </div>
 
             <p className={`${styles.project__view}`}>View Project</p>
           </Link>
-        </div>
+        </motion.div>
 
-        <div className={styles.project__wrap}>
+        <motion.div
+          className={styles.project__wrap}
+          ref={ref2}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView2 ? { opacity: 1, y: 0 } : ""}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <Link href={"/"} className={styles.project__wrapLink}>
-            <Image
-              src={acapulco}
-              priority={true}
-              alt="Project Acapulco en la Piel"
-              className={styles.project__img}
-              height={300}
-              width={550}
-            />
+            <motion.div className={styles.img__div}>
+              <Image
+                src={acapulco}
+                priority={true}
+                alt="Project Acapulco en la Piel"
+                className={styles.project__img}
+                height={300}
+                width={550}
+              />
+            </motion.div>
+
             <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
             <div className={styles.project__stack}>
               <p className={styles.project__text}>Next.js</p>
               <p className={styles.project__text}>Strapi</p>
               <p className={styles.project__text}>CSS modules</p>
-            </div> 
+            </div>
+
             <p className={`${styles.project__view}`}>View Project</p>
           </Link>
-        </div>
+        </motion.div>
       </motion.div>
     </>
   );
