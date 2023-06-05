@@ -16,12 +16,22 @@ export default function HeroWork() {
   const ref2 = useRef(null);
   const isInView2 = useInView(ref2, { once: true });
   
-  useEffect(() => {
-    console.log("Element is in view: ", isInView)
-  }, [isInView])
+
 
   const handleClick = () => {
     setIsClicked(true);
+
+    const section = document.getElementById("fullScreenSlide");
+    setTimeout(() => {
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 1000);
+   
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 2000);
+    
   };
 
   const animateVariants = {
@@ -39,9 +49,6 @@ export default function HeroWork() {
     initial: { opacity: 1, y: 0 },
   };
   
-
-
-
 
   return (
     <>
