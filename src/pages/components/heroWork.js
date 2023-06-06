@@ -119,7 +119,7 @@ export default function HeroWork() {
           animate={isInView ? { opacity: 1, y: 0 } : ""}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Link href={"/"} className={styles.project__wrapLink}>
+          <Link href={"/work/acapulcoenlapiel"} className={styles.project__wrapLink}>
             <motion.div className={styles.img__div}>
               <Image
                 src={acapulco}
@@ -149,7 +149,7 @@ export default function HeroWork() {
           animate={isInView2 ? { opacity: 1, y: 0 } : ""}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Link href={"/"} className={styles.project__wrapLink}>
+          <Link href={"/work/acapulcoenlapiel"} className={styles.project__wrapLink}>
             <motion.div className={styles.img__div}>
               <Image
                 src={acapulco}

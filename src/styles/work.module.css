@@ -1,0 +1,160 @@
+.hero{
+    width: 100%;
+    height: 700px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+
+
+    
+}
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem 0 1.5rem;
+    
+
+
+}
+.hero__h1{
+    font-size: 3.2rem;
+    width: 80%;
+    line-height: 130%;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+.hero__textWrap{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.hero__span{
+    width: 0.5rem;
+    height: 2rem;
+    display: inline-block;
+    background-color: var(--primary-orange);
+}
+.hero__subtitle{
+    color: var(--primary-orange);
+    font-weight: bold;
+}
+
+.hero__info{
+    margin-top: 3rem;
+    letter-spacing: .01rem;
+}
+.project{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.projectImage{
+    width: 220px;
+    height: 220px;
+
+}
+.button {
+    border: 2px solid var(--primary-orange);
+    background-color: transparent;
+    text-align: center; 
+    display: inline-block; 
+    cursor: pointer; 
+    width: fit-content;
+    height: auto;
+    transition: all .3s ease;
+    margin: 2.2rem auto 0 auto ;
+    
+
+  }
+.button a {
+    color: var(--white);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color:transparent;
+    transition: all .3s ease;
+    font-size: 1.5rem;
+  }
+  
+  .button:hover{
+    border: none;
+    background-color: var(--secondary-yellow);
+    
+  }
+  .button:hover a {
+    color: var(--black);
+  }
+  .viewProject{
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .hero{
+        height: 820px;
+        gap: 5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .projectImage{
+        width: 300px;
+        height: 300px;
+    }
+   
+    .button{
+        margin: 2.4rem 0 0 0;
+    }
+  }
+  @media screen and (min-width: 840px) {
+    .hero{
+        height: 899px;
+    }
+
+  }
+@media screen and (min-width: 1020px) {
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-evenly;
+        width: 80%;
+        height: 105dvh;
+        
+        gap: 0;
+
+    }
+    .hero__container{
+        margin: 20rem 0;
+        padding: 2% 0;
+        width: 45rem;
+        display: flex;
+        
+    }
+    .hero__h1{
+        font-size: 4rem;
+        width: 50rem;
+    }
+    .hero__info{
+        width: 50rem;
+    }
+
+    .project{
+        margin: 0;
+        
+    }
+    
+    .button a{
+        font-size: 1.6rem;
+    }
+
+    .projectImage{
+        width: 300px;
+        height: 300px;
+    }
+   
+
+}
