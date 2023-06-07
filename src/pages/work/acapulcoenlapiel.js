@@ -9,12 +9,18 @@ import projectImage from "../../../public/images/acapulcoW.png";
 import projectImage2 from "../../../public/images/acapulco/hotel1.webp";
 import projectImage3 from "../../../public/images/acapulco/merch.webp";
 import projectImage4 from "../../../public/images/acapulco/servicios2.webp";
-import projectImage5 from "../../../public/images/acapulco/galeria.webp";
+import projectImage5 from "../../../public/images/acapulco/serviciosM3.webp";
 import leftA from "../../../public/icons/left-chev.svg";
 import rightA from "../../../public/icons/right-chev.svg";
 
 function Acapulcoenlapiel() {
   const [ref, inView] = useInView({
+    triggerOnce: true, // Animation triggers only once
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true, // Animation triggers only once
+  });
+  const [ref3, inView3] = useInView({
     triggerOnce: true, // Animation triggers only once
   });
 
@@ -28,8 +34,8 @@ function Acapulcoenlapiel() {
             <p className={styles.hero__subtitle}>Next.js & Strapi. </p>
           </div>
           <p className={styles.hero__info}>
-            Website developed to promote Acapulco Tourism and Acapulco En La
-            Piel Youtube channel.
+            
+Website developed to promote Acapulco tourism and the &quot;Acapulco En La Piel&quot; YouTube channel.
           </p>
 
           <button className={styles.button}>
@@ -50,7 +56,7 @@ function Acapulcoenlapiel() {
       </motion.div>
 
       <main className={`section ${styles.main}`}>
-        <div className={styles.briefing} ref={ref}>
+        <div className={styles.briefing}>
           <motion.h2
             initial={{ opacity: 0, y: 15 }} // Initial state: invisible
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
@@ -60,6 +66,7 @@ function Acapulcoenlapiel() {
             The briefing.
           </motion.h2>
           <motion.p
+            ref={ref}
             initial={{ opacity: 0, y: 15 }} // Initial state: invisible
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
             transition={{ delay: 0.4, duration: 0.6 }}
@@ -71,59 +78,93 @@ function Acapulcoenlapiel() {
           </motion.p>
         </div>
 
-        <div className={styles.image__div}>
+        <motion.div
+          className={styles.image__div}
+          initial={{ opacity: 0, y: 15 }} // Initial state: invisible
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+          transition={{ delay: 0.6, duration: 0.6 }}
+        >
           <Image
             src={projectImage2}
             alt="Acapulco en la piel Screenshot"
-            width={320}
-            height={320}
             className={styles.project__img}
           />
           <Image
             src={projectImage3}
             alt="Acapulco en la piel Screenshot"
-            width={320}
-            height={320}
             className={styles.project__img}
           />
-        </div>
-        <Image
-          src={projectImage4}
-          alt="Acapulco en la piel S+creenshot"
-          width={320}
-          height={320}
-          className={styles.project__imgfull}
-        />
+        </motion.div>
+        <motion.div
+          className={styles.imgfull__wrapper}
+          ref={ref2}
+          initial={{ opacity: 0 }} // Initial state: invisible
+          animate={{ opacity: inView2 ? 1 : 0 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+          transition={{ delay: 0.4, duration: 0.6 }}
+        >
+          <Image
+            src={projectImage4}
+            alt="Acapulco en la piel S+creenshot"
+            className={styles.project__imgfull}
+          />
+        </motion.div>
 
-        <div className={styles.solution}>
+        <div className={styles.solution} ref={ref3}>
           <div className={styles.solution__wrapper}>
-            <h2 className={styles.title__h2}>The solution.</h2>
-            <p className={styles.solution__p}>
+            <motion.h2
+              initial={{ opacity: 0, y: 15 }} // Initial state: invisible
+              animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className={styles.title__h2}
+            >
+              The solution.
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 15 }} // Initial state: invisible
+              animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className={styles.solution__p}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type
-            </p>
+            </motion.p>
           </div>
-          <Image
-            src={projectImage5}
-            alt="Acapulco en la piel Screenshot"
-            className={styles.solution__img}
-            width={320}
-            height={320}
-          />
+          
+            <Image
+              src={projectImage5}
+              alt="Acapulco en la piel Screenshot"
+              className={styles.solution__img}
+              width={320}
+              height={320}
+            />
+          
         </div>
         <div className={styles.buttons__div}>
-          <div>
-          <Link href={'/'}>Back to Work.</Link>
-          <Image src={leftA} alt="Back to work arrow" width={35} height={35}/>
+          <Link className={styles.link__wrapper} href={"/projects"}>
+            <Image
+              className={styles.arrow}
+              src={leftA}
+              alt="Back to work arrow"
+              width={35}
+              height={35}
+            />
+            <p className={styles.button__txt}>Back to Work.</p>
+          </Link>
 
-          </div>
-          <div>
-          <Link href={'/'}>Next.</Link>
-          <Image src={rightA} alt="Next arrow" width={35} height={35}/>
-
-          </div>
+          <Link
+            className={styles.link__wrapper}
+            href={"/work/acapulcoenlapiel"}
+          >
+            <p className={styles.button__txt}>Next.</p>
+            <Image
+              className={styles.arrow}
+              src={rightA}
+              alt="Next arrow"
+              width={35}
+              height={35}
+            />
+          </Link>
         </div>
       </main>
     </Layout>
