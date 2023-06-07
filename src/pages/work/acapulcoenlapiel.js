@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { animate, motion } from "framer-motion";
@@ -34,8 +35,8 @@ function Acapulcoenlapiel() {
             <p className={styles.hero__subtitle}>Next.js & Strapi. </p>
           </div>
           <p className={styles.hero__info}>
-            
-Website developed to promote Acapulco tourism and the &quot;Acapulco En La Piel&quot; YouTube channel.
+            Website developed to promote Acapulco tourism and the &quot;Acapulco
+            En La Piel&quot; YouTube channel.
           </p>
 
           <button className={styles.button}>
@@ -72,9 +73,10 @@ Website developed to promote Acapulco tourism and the &quot;Acapulco En La Piel&
             transition={{ delay: 0.4, duration: 0.6 }}
             className={styles.briefing__p}
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type
+            Acapulco En La Piel is a project where Diego aims to promote hotels,
+            restaurants, and services to his YouTube audience, engaging new
+            people and providing advice on the must-visit places when exploring
+            Acapulco, Guerrero.
           </motion.p>
         </div>
 
@@ -119,26 +121,27 @@ Website developed to promote Acapulco tourism and the &quot;Acapulco En La Piel&
             >
               The solution.
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 15 }} // Initial state: invisible
               animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
               transition={{ delay: 0.5, duration: 0.6 }}
-              className={styles.solution__p}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type
+              className={styles.solution__p}
+            >
+              I utilized Next.js for the front-end and chose Strapi as the
+              back-end solution to address the customer's needs. Strapi's ease
+              of setup and user-friendly interface played a key role in the
+              decision. This project remains a work in progress as we strive to
+              meet Diego's request for a beta version to be launched promptly.
             </motion.p>
           </div>
-          
-            <Image
-              src={projectImage5}
-              alt="Acapulco en la piel Screenshot"
-              className={styles.solution__img}
-              width={320}
-              height={320}
-            />
-          
+
+          <Image
+            src={projectImage5}
+            alt="Acapulco en la piel Screenshot"
+            className={styles.solution__img}
+            width={320}
+            height={320}
+          />
         </div>
         <div className={styles.buttons__div}>
           <Link className={styles.link__wrapper} href={"/projects"}>
