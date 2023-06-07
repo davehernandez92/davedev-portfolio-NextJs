@@ -110,7 +110,7 @@ export default function HeroWork() {
         </div>
       </motion.div>
 
-      <motion.div id="fullScreenSlide" className={styles.fullScreenSlide}>
+      <motion.div id="fullScreenSlide" className={`section ${styles.fullScreenSlide}`}>
         {/* Projects */}
         <motion.div
           className={styles.project__wrap}

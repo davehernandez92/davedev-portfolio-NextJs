@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
+    margin-bottom: 5rem;
 
 
     
@@ -89,9 +90,71 @@
   .button:hover a {
     color: var(--black);
   }
-  .viewProject{
-    display: none;
-  }
+    /*MAIN CONTENT*/
+
+    .main{
+        background-color: var(--white);
+        padding: 9rem 1.5rem ;;
+        
+      
+    
+      }
+    
+      .main p{
+        color: #000;
+        line-height: 180%;
+        font-weight: 400;
+      }
+      .main h2{
+        color: var(--black);
+      }
+      .briefing, .solution__wrapper{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+       
+      }
+      .briefing__p, .solution__p{
+        margin-bottom: 10rem;
+      }
+      .image__div{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+      }
+    
+      .project__img{
+        margin: 0 auto;
+        width: auto;
+        height: 320px;
+      }
+    
+      .project__imgfull{
+        width: auto;
+        height: 320px;
+        display: flex;
+        margin: 5rem auto 8rem auto;
+      }
+
+      .solution{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .solution__wrapper{
+        margin-top: 8rem;
+      }
+
+      .solution__img{
+        margin: 0 auto;
+        width: auto;
+        height: 640px;
+      
+      }
+
+
   @media screen and (min-width: 768px) {
     .hero{
         height: 820px;
@@ -100,14 +163,17 @@
         margin: 0 auto;
     }
     .projectImage{
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
     }
    
     .button{
-        margin: 2.4rem 0 0 0;
+        margin: 2.4rem 0;
     }
   }
+
+
+
   @media screen and (min-width: 840px) {
     .hero{
         height: 899px;
@@ -156,5 +222,20 @@
         height: 300px;
     }
    
+    .main{
+        padding: 0 20.5% 5rem 20.5%;
+    }
+    .briefing {
+        width: 50%;
+        padding-top: 10rem;
+        
+        gap: 4rem;
+        margin-bottom: 8rem;
+    }
+    .title__h2{
+        font-size: 3rem;  
+    }
+    
+
 
 }
