@@ -1,0 +1,144 @@
+.hero{
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    margin: 9rem auto 5rem auto;
+}
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem 0 1.5rem;
+    
+
+}
+
+.hero__h1{
+    font-size: 3.2rem;
+    width: 60%;
+    line-height: 130%;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+.hero__textWrap{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.hero__span{
+    width: 0.5rem;
+    height: 2rem;
+    display: inline-block;
+    background-color: var(--secondary-yellow);
+}
+.hero__subtitle{
+    color: var(--secondary-yellow);
+    font-weight: bold;
+}
+
+.hero__info{
+    margin-top: 3rem;
+    letter-spacing: .01rem;
+}
+
+.hero__info2{
+    margin-top: 0.5rem;
+    letter-spacing: .01rem;
+}
+
+.images{
+    margin-top: 5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image1{
+    width: 100%;
+    height: auto;
+}
+.imageback{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero{
+        min-width: 90%;
+        
+        
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .hero{
+        height: 899px;
+        min-width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+    .hero{
+        flex-direction: row;
+        margin-top: 4rem;
+        
+    }
+    .container__wrapper{
+        width: 45%;
+
+        position: relative;
+    }
+    .hero__container{
+        margin: 0 0 0 28%;
+        padding: 0;
+        width: 70%;
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        
+        
+       
+        
+    }
+    .hero__h1{
+        font-size: 4rem;
+        width: 74%;
+    }
+    .hero__info2{
+        width: 96%;
+    }
+    .images{
+        margin: 0;
+        width: 55%;
+        height: 100%;
+        position: relative;
+    }
+    .image1{
+        position: absolute;
+        height: 50%;
+        width: auto;
+        top: 25%;
+        left: 0;
+        z-index: 2;
+        filter: grayscale(70%);
+        opacity: 1;
+        transition: all .2s ease-in;
+    }
+    .image1:hover{
+        opacity: 0;
+    }
+    .imageback{
+        position: absolute;
+        height: 50%;
+        width: auto;
+        left: 0;
+        display: unset;
+        z-index: 1;
+    }
+    
+
+}
+
+@media screen and (min-width: 1200px) {}

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { animate, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/layout";
