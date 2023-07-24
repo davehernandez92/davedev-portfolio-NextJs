@@ -15,11 +15,11 @@
 }
 
 .hero__h1{
-    font-size: 3.2rem;
+    font-size: 3rem;
     width: 60%;
     line-height: 130%;
     font-weight: 900;
-    letter-spacing: .1em;
+    letter-spacing: .01em;
 }
 .hero__textWrap{
     display: flex;
@@ -48,7 +48,7 @@
 }
 
 .images{
-    margin-top: 5rem;
+    margin: 5rem 0 3rem 0;
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
@@ -62,12 +62,97 @@
     display: none;
 }
 
+.main{
+    background-color: var(--white);
+    padding-top: 6rem;
+    padding: 4rem 1.5rem 0 1.5rem;
+}
+.main p{
+    color: var(--black);
+}
+.main h1{
+    color: var(--black);
+    line-height: 130%;
+    font-weight: 900;
+    letter-spacing: .01em;
+}
+.heading{
+    width: 75%;
+}
+.heading h1{
+    font-size: 3rem;
+    
+}
+
+.image__about{
+    display: none;
+}
+
+.text__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding-bottom: 6rem;
+}
+
+.text__p {
+    line-height: 180%;
+    font-weight: 400;
+}
+
+.aboutImg, .hobby__wrap>img {
+    width: 100%;
+    height: auto;
+}
+.hobby{
+    margin-bottom: 4rem;
+}
+.hobby__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+    padding-bottom: 6rem;
+ 
+}
+.image__div{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 @media screen and (min-width: 768px) {
 
     .hero{
         min-width: 90%;
         
         
+    }
+    .aboutImg{
+        width: 70%;
+        height: auto;
+        margin: 2rem auto;
+        
+    }
+
+    .heading{
+        padding: 0 3.5rem;
+        
+    }
+    .heading h1{
+        font-size: 3.2rem;
+        width: 60%;
+    }
+
+    .hobby__wrap h1{
+        width: 65%;
+        font-size: 3.2rem;
+    }
+    
+    .hobby__wrap img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
@@ -76,11 +161,17 @@
         height: 899px;
         min-width: 80%;
     }
-
+    .hobbyImg{
+        
+        height: auto;
+        margin: 2rem auto;
+        
+    }
 }
 
 @media screen and (min-width: 1080px) {
     .hero{
+        height: 100vh;
         flex-direction: row;
         margin-top: 4rem;
         
@@ -137,6 +228,57 @@
         display: unset;
         z-index: 1;
     }
+    .heading{
+        padding-top: 4rem;
+    }
+    .heading h1{
+        margin-left: 13.5%;
+    }
+    
+    .text__wrapper{
+        width: 80%;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    .aboutImg{
+        width: 90%;
+    }
+
+    .about__txt_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+    }
+    .hobby {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hobby__wrap h1{
+        width: 50%;
+        margin: 0 auto 0 2.5%;
+        
+    }
+    .image__div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hobbyImg{
+        min-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+    .hobbyTxt{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .link{
+        color: var(--black);
+    }
+
     
 
 }

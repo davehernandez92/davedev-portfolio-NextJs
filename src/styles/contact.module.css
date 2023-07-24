@@ -1,0 +1,41 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 1.5rem 0 1.5rem;
+}
+.contact__h1{
+    font-size: 3rem;
+    width:80%;
+    line-height: 130%;
+    font-weight: 900;
+    letter-spacing: .01em
+}
+.contact__textWrap{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact__span{
+    width: 0.5rem;
+    height: 2rem;
+    display: inline-block;
+    background-color: var(--secondary-yellow);
+}
+
+.contact__subtitle{
+    color: var(--secondary-yellow);
+    font-weight: bold;
+}
+.contact__txt{
+    margin: 2rem 0 1.4rem 0;
+    letter-spacing: .01rem;
+}
+.contact_txt2{
+    margin: 1.4rem 0;
+    letter-spacing: .01rem;
+}
+.contact__email{
+    display: flex;
+    margin: 2rem 0 ;
+    letter-spacing: .01rem;
+}
