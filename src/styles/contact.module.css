@@ -1,7 +1,7 @@
 .contact{
     display: flex;
     flex-direction: column;
-    margin: 10rem 1.5rem 0 1.5rem;
+    margin: 12rem 1.2rem 0 1.2rem;
 }
 .contact__h1{
     font-size: 3rem;
@@ -9,6 +9,9 @@
     line-height: 130%;
     font-weight: 900;
     letter-spacing: .01em
+}
+.contact__h1 span {
+    color: var(--primary-orange );
 }
 .contact__textWrap{
     display: flex;
@@ -38,4 +41,12 @@
     display: flex;
     margin: 2rem 0 ;
     letter-spacing: .01rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5% 10%;
+    }
 }

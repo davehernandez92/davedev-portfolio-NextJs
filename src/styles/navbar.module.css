@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    z-index: 3;
+    z-index: 4;
   }
   .navbar__logo2{
     color: var(--primary-orange);
@@ -27,7 +27,7 @@
   .menu__icon {
     cursor: pointer;
     width: auto;
-    z-index: 3;
+    z-index: 4;
     
   }
   
@@ -47,6 +47,7 @@
     background-color: var(--secondary-yellow);
     backdrop-filter: blur(2px);
     justify-content: center;
+    z-index: 3;
     /* transition: all 0.4s cubic-bezier(.95,.05,.8,.04) */
   }
   .menu > li {

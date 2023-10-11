@@ -4,7 +4,6 @@ import styles from '../../styles/form.module.css';
 const Form = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [timeframe, setTimeframe] = useState('');
   const [projectDetails, setProjectDetails] = useState('');
 
   const handleSubmit = (e) => {
@@ -21,9 +20,9 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}  className={styles.form}>
       <div className={styles.formgroup}>
-        <label htmlFor="name" className={styles.label}>Name:</label>
+        <label htmlFor="name" className={styles.label}>Name</label>
         <input
           type="text"
           id="name"
@@ -35,7 +34,7 @@ const Form = () => {
         />
       </div>
       <div className={styles.formgroup}>
-        <label htmlFor="email" className={styles.label}>Email:</label>
+        <label htmlFor="email" className={styles.label}>Email</label>
         <input
           type="email"
           id="email"
@@ -46,22 +45,7 @@ const Form = () => {
           className={styles.input}
         />
       </div>
-      <div className={styles.formgroup}>
-        <label htmlFor="timeframe" className={styles.label}>Timeframe:</label>
-        <select
-          id="timeframe"
-          name="timeframe"
-          value={timeframe}
-          onChange={(e) => setTimeframe(e.target.value)}
-          required
-          className={styles.select}
-        >
-          <option value="">Select a timeframe</option>
-          <option value="2-4 weeks">2-4 weeks</option>
-          <option value="1-2 months">1-2 months</option>
-          <option value="more than 2 months">More than 2 months</option>
-        </select>
-      </div>
+      
       <div className={styles.formgroup}>
         <label htmlFor="project-details" className={styles.label}>Tell me about your project:</label>
         <textarea
