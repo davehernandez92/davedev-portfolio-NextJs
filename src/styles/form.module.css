@@ -4,8 +4,6 @@
 .formgroup {
   margin-bottom: 25px;
   position: relative;
-  
- 
 }
 
 .label {
@@ -18,18 +16,27 @@
 .select {
   width: 100%;
   padding: 10px;
-  
   border-radius: 4px;
 }
+.input{
+  color: var(--white);
+  background-color: transparent;
+  transition: outline-color 500ms;
+  outline: 2px solid var(--white);
+}
 .textarea{
+  color: var(--white);
   height: 10rem;
+  background-color: transparent;
+  transition: outline-color 500ms;
+  outline: 2px solid var(--white);
 }
 
 
 .button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: var(--primary-orange);
+  background-color: var(--secondary-yellow);
   color: white;
   border: none;
   border-radius: 4px;
@@ -37,16 +44,15 @@
 }
 
 .button:hover {
-  background-color: #fa4646;
-}
-.input {
-  background-color: transparent;
-  transition: outline-color 500ms;
-  outline: 2px solid var(--white);
+  background-color: #dca123;
 }
 
 .input:focus, /* Add a comma here */
 .input:valid {
+  outline-color: var(--secondary-yellow);
+}
+.textarea:focus, /* Add a comma here */
+.textarea:valid {
   outline-color: var(--secondary-yellow);
 }
 

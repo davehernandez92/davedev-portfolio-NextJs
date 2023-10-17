@@ -6,6 +6,20 @@ const Form = () => {
   const [email, setEmail] = useState('');
   const [projectDetails, setProjectDetails] = useState('');
 
+
+  
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleProjectDetailsChange = (e) => {
+    setProjectDetails(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -15,44 +29,62 @@ const Form = () => {
     // Reset form fields
     setName('');
     setEmail('');
-    setTimeframe('');
+  
     setProjectDetails('');
   };
 
   return (
-    <form onSubmit={handleSubmit}  className={styles.form}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <div className={styles.formgroup}>
-        <label htmlFor="name" className={styles.label}>Name</label>
+        <label
+          htmlFor="name"
+          className={styles.label}
+          style={{ display: name ? "none" : "block" }}
+        >
+          Name
+        </label>{" "}
         <input
           type="text"
           id="name"
-          name="name"
+          name=""
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={handleNameChange}
           required
           className={styles.input}
         />
       </div>
       <div className={styles.formgroup}>
-        <label htmlFor="email" className={styles.label}>Email</label>
+        <label
+          htmlFor="email"
+          className={styles.label}
+          style={{ display: email ? "none" : "block" }}
+        >
+          Email
+        </label>
         <input
           type="email"
           id="email"
           name="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={handleEmailChange}
           required
           className={styles.input}
         />
       </div>
-      
+
       <div className={styles.formgroup}>
-        <label htmlFor="project-details" className={styles.label}>Tell me about your project:</label>
+      <label
+          htmlFor="project-details"
+          className={styles.label}
+          style={{ display: projectDetails ? 'none' : 'block' }}
+        >
+          Tell me about your project:
+        </label>
         <textarea
           id="project-details"
           name="project-details"
           value={projectDetails}
-          onChange={(e) => setProjectDetails(e.target.value)}
+          onChange={handleProjectDetailsChange}
           required
           className={styles.textarea}
         ></textarea>
