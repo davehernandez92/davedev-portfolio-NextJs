@@ -1,8 +1,9 @@
 
 import nodemailer from 'nodemailer';
 
+
 export default async function handler(req, res) {
-  const { recipientEmail, subject, text } = req.body;
+  const { recipientEmail, customer, text } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -11,15 +12,21 @@ export default async function handler(req, res) {
   secure: true,
   auth: {
     
-    user: "REPLACE-WITH-YOUR-ALIAS@YOURDOMAIN.COM",
-    pass: "REPLACE-WITH-YOUR-GENERATED-PASSWORD",
+    user: process.env.USER,
+    pass: process.env.PASSWORD,
+  },
+  tls: {
+    rejectUnauthorized: false, 
   },
   });
 
-  let mailOptions = {
-    from: 'your-email@gmail.com', // Sender address
-    to: recipientEmail, // List of recipients
-    subject: subject, // Subject line
+  const mailOptions = {
+    from: {
+        name: 'davedev',
+        address: process.env.USER
+    }, 
+    to: 'davedev.ca@gmail.com', 
+    subject: 'new email from Davedev.ca', // Subject line
     text: text, // Plain text body
   };
 

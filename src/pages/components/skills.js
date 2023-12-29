@@ -27,7 +27,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0, duration: .5 }}
+            transition={{ delay: 0, duration: .45 }}
           >
             <IoLogoJavascript className="skillsIcon" />
           </motion.li>
@@ -35,7 +35,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0.2, duration: .5  }}
+            transition={{ delay: 0.1, duration: .45  }}
           >
             <IoLogoCss3 className="skillsIcon" />
           </motion.li>
@@ -43,7 +43,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0.35, duration: .5  }}
+            transition={{ delay: 0.2, duration: .45  }}
           >
             <SiTailwindcss className="skillsIcon" />
           </motion.li>
@@ -51,7 +51,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0.5, duration: .5  }}
+            transition={{ delay: 0.25, duration: .45  }}
           >
             <FaReact className="skillsIcon" />
           </motion.li>
@@ -59,7 +59,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0.65, duration: .5  }}
+            transition={{ delay: 0.3, duration: .45  }}
           >
             <SiNextdotjs className="skillsIcon" />
           </motion.li>
@@ -67,7 +67,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 0.8, duration: .5  }}
+            transition={{ delay: 0.35, duration: .45  }}
           >
             <SiRemix className="skillsIcon" />
           </motion.li>
@@ -75,7 +75,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: .95, duration: .5  }}
+            transition={{ delay: .4, duration: .45  }}
           >
             <SiStrapi className="skillsIcon" />
           </motion.li>
@@ -83,7 +83,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 1.1, duration: .5  }}
+            transition={{ delay: .45, duration: .45  }}
           >
             <SiPrisma className="skillsIcon" />
           </motion.li>
@@ -91,7 +91,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 1.25, duration: .5  }}
+            transition={{ delay: .5, duration: .45  }}
           >
             <FaNodeJs className="skillsIcon" />
           </motion.li>
@@ -99,7 +99,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 1.4, duration: .5  }}
+            transition={{ delay: .5, duration: .45  }}
           >
             <SiMongodb className="skillsIcon" />
           </motion.li>
@@ -107,7 +107,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 1.55, duration: .5  }}
+            transition={{ delay: .5, duration: .45  }}
           >
             <SiGraphql className="skillsIcon" />
           </motion.li>
@@ -115,7 +115,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 1.7, duration: .5  }}
+            transition={{ delay: .5, duration: .45  }}
           >
             <SiAmazonaws className="skillsIcon" />
           </motion.li>
@@ -123,7 +123,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 1.85, duration: .5  }}
+            transition={{ delay: .5, duration: .45  }}
           >
             <FaGitAlt className="skillsIcon" />
           </motion.li>
@@ -131,7 +131,7 @@ export default function Skills() {
             variants={listItemVariants}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            transition={{ delay: 2, duration: .5  }}
+            transition={{ delay: .5, duration: .45  }}
           >
             <IoLogoPython className="skillsIcon" />
           </motion.li>

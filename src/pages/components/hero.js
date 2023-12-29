@@ -1,78 +1,70 @@
-import {useState, useEffect} from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import image1 from '../../../public/images/acapulcoEnlaPiel.webp'
-import styles from "../../styles/hero.module.css"
-
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import image1 from "../../../public/images/acapulcoEnlaPiel.webp";
+import styles from "../../styles/hero.module.css";
 
 export default function Hero() {
-    const [startAnimation, setStartAnimation] = useState(false)
-    
+  const [startAnimation, setStartAnimation] = useState(false);
 
-   
-    useEffect(() => {
-        setStartAnimation(true);
-      }, []);
-    const variants = {
-        first:{
-            opacity:0,
-            y: 20,   
-            
-        },
-        second:{
-            opacity:0,
-            x: -20,  
-            y:0,
-            
-        },
-        third:{
-            opacity:0,
-            y: 30,   
-            
-        },
-        fourth:{
-            opacity:0,
-               
-            
-        },
-        aligned:{
-            opacity:1,
-            y: 0, 
-            x:0,  
-            transition: {
-                duration: .9,
-                delay:0.4
-              }, 
-        },
-        aligned2:{
-            opacity:1,
-            y: 0, 
-            x:0,  
-            transition: {
-                duration: .9,
-                delay:0.45
-              }, 
-        },
-        aligned3:{
-            opacity:1,
-            y: 0, 
-            x:0,  
-            transition: {
-                duration: .9,
-                delay:0.5
-              }, 
-        },
-        aligned4:{
-            opacity:1,
-            y: 0, 
-            x:0,  
-            transition: {
-                duration: .7,
-                delay:0.2
-              }, 
-        },
-    }
+  useEffect(() => {
+    setStartAnimation(true);
+  }, []);
+  const variants = {
+    first: {
+      opacity: 0,
+      y: 20,
+    },
+    second: {
+      opacity: 0,
+      x: -20,
+      y: 0,
+    },
+    third: {
+      opacity: 0,
+      y: 30,
+    },
+    fourth: {
+      opacity: 0,
+    },
+    aligned: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 0.9,
+        delay: 0.4,
+      },
+    },
+    aligned2: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 0.9,
+        delay: 0.45,
+      },
+    },
+    aligned3: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 0.9,
+        delay: 0.5,
+      },
+    },
+    aligned4: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 0.7,
+        delay: 0.2,
+      },
+    },
+  };
 
   return (
     <div className={` ${styles.hero}`}>
@@ -111,22 +103,23 @@ export default function Hero() {
         animate={startAnimation ? "aligned4" : "fourth"}
       >
         <aside className={styles.project__wrapper}>
-          <Link href='/projects'>
+          <Link href="/work/acapulcoenlapiel">
             <Image
               className={styles.projectImage}
               src={image1}
               alt="Acapulco en la piel project"
             />
-            <motion.div className={styles.viewProject}
-            whileHover={{opacity:1} }
+            <motion.div
+              className={styles.viewProject}
+              whileHover={{ opacity: 1 }}
             >
-             <p>View this project </p>
+              <p>View this project </p>
             </motion.div>
           </Link>
-          <button className={styles.button}>
-            <Link href="/projects">See all projects</Link>
-          </button>
         </aside>
+        <button className={styles.button}>
+          <Link href="/projects">See all projects</Link>
+        </button>
       </motion.div>
     </div>
   );

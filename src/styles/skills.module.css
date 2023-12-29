@@ -1,6 +1,6 @@
 .skillSection{
     background-color: var(--white);
-    padding: 5rem 1.5rem 0 1.5rem;
+    padding: 8rem 1.5rem 0 1.5rem;
 }
 .skills__heading{
     color: var(--black);
@@ -26,7 +26,7 @@
 @media screen and (min-width: 1020px) {
     .skillSection{
         height: 465px;
-        padding: 6% 10% 0 10%;
+        padding: 10% 10% 0 10%;
     }
     
     .skills__heading{

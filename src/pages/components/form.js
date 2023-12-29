@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../../styles/form.module.css';
+import axios from 'axios';
+
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -20,17 +22,26 @@ const Form = () => {
     setProjectDetails(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Perform form submission logic here
-    // You can send form data to the server or perform any desired action
-
-    // Reset form fields
-    setName('');
-    setEmail('');
-  
-    setProjectDetails('');
+    console.log('boton');
+    const data = {
+      recipientEmail: email, // Replace with the recipient's email
+      customer: name,
+      text: `Name: ${name}\nProject Details: ${projectDetails}`,
+    }
+    try {
+      const response = await axios.post('/api/sendEmail', data);
+      console.log(response.data); // Optional: You can handle the response as per your requirements
+      // Reset form fields
+      setName('');
+      setEmail('');
+      setProjectDetails('');
+    } catch (error) {
+      console.error('Error occurred while sending email:', error);
+      // Handle the error as per your requirements
+    }
+    
   };
 
   return (

@@ -36,6 +36,8 @@
 }
 .project{
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
     
 }
 .project__wrapper{
@@ -56,7 +58,7 @@
     width: fit-content;
     height: auto;
     transition: all .3s ease;
-    margin: 2.2rem auto 0 auto ;
+    margin: 4.5rem auto 0 auto ;
     
 
   }
@@ -101,22 +103,14 @@
         justify-content: center;
         width: 80%;
         height: 105dvh;
-        margin: 0 auto;
+        margin: 0 auto 10rem auto;
     }
     .hero__container{
         margin: 20rem 0;
         padding: 2% 10% 0 0;
     }
 
-    .project{
-        margin: 0;
-        position: relative;
-    }
-    .button{
-        position: absolute;
-        bottom: -90px;
-        right: -60px;   
-    }
+    
     .button a{
         font-size: 1.6rem;
     }
