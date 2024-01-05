@@ -22,7 +22,7 @@
     z-index: 4;
   }
   .navbar__logo2{
-    color: var(--primary-orange);
+    color: var(--primary);
   }
   .menu__icon {
     cursor: pointer;
@@ -44,7 +44,7 @@
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--secondary-yellow);
+    background-color: var(--secondary);
     backdrop-filter: blur(2px);
     justify-content: center;
     z-index: 3;

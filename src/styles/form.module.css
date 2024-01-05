@@ -36,7 +36,7 @@
 .button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: var(--secondary-yellow);
+  background-color: var(--secondary);
   color: white;
   border: none;
   border-radius: 4px;
@@ -49,11 +49,11 @@
 
 .input:focus, /* Add a comma here */
 .input:valid {
-  outline-color: var(--secondary-yellow);
+  outline-color: var(--secondary);
 }
 .textarea:focus, /* Add a comma here */
 .textarea:valid {
-  outline-color: var(--secondary-yellow);
+  outline-color: var(--secondary);
 }
 
 .label {
@@ -68,5 +68,5 @@
 
 
 .input:focus + .label {
-  color: var(--secondary-yellow);
+  color: var(--secondary);
 }

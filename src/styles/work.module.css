@@ -32,10 +32,10 @@
     width: 0.5rem;
     height: 2rem;
     display: inline-block;
-    background-color: var(--primary-orange);
+    background-color: var(--primary);
 }
 .hero__subtitle{
-    color: var(--primary-orange);
+    color: var(--primary);
     font-weight: bold;
 }
 
@@ -57,7 +57,7 @@
 
 }
 .button {
-    border: 2px solid var(--primary-orange);
+    border: 2px solid var(--primary);
     background-color: transparent;
     text-align: center; 
     display: inline-block; 
@@ -82,7 +82,7 @@
   
   .button:hover{
     border: none;
-    background-color: var(--secondary-yellow);
+    background-color: var(--secondary);
     
   }
   .button:hover a {
@@ -175,9 +175,12 @@
         width: 90%;
         margin: 0 auto;
     }
+    .hero__container{
+        margin-bottom: 35px;
+    }
     .projectImage{
-        width: 320px;
-        height: 320px;
+        width: 290px;
+        height: 290px;
     }
    
     .button{
@@ -245,10 +248,15 @@
         padding: 0 11% 5rem 12%;
         flex-direction: row;
     }
+    .briefingWrapper{
+        padding: 12rem 0;
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    }
     .briefing {
-        width: 50%;
+        width: 80%;
         padding-top: 10rem;
-        
         gap: 4rem;
         margin: 0 0 8rem 0;
     }
@@ -257,18 +265,18 @@
     }
 
     .image__div{
-        flex-direction: row;  
+        justify-content: center;
         width: 100%; 
         gap: 5%;
         
     }
 
     .project__img{
-        width: 47.5%;
-        height: auto;
+        width: 80%;
+        height: 80%;
     }
     .project__imgfull{
-        width: 1200px;
+        width: auto;
         height: auto;
     }
     
@@ -301,7 +309,7 @@
         
     }
     .link__wrapper:hover .button__txt{
-        color: var(--primary-orange);
+        color: var(--primary);
       }
 
       
@@ -324,10 +332,6 @@
         
     }
     
-    .projectImage{
-        width: 100%;
-        height: auto;
-    }
     
     .main{
         padding: 0 17.5% 5rem 17.5%;

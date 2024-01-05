@@ -7,11 +7,9 @@ import Image from "next/image";
 import Layout from "./components/layout";
 import styles from "../styles/about.module.css";
 import dave1 from "../../public/images/about/d2.webp";
-import dave2 from "../../public/images/about/d4.webp";
 
 import about from "../../public/images/about/DD.jpg";
 import hobby from "../../public/images/about/pl1.jpg";
-
 import hobby4 from "../../public/images/about/s1.webp";
 
 export default function About() {
@@ -43,12 +41,7 @@ export default function About() {
             width={1200}
             priority={true}
           />
-          <Image
-            className={styles.imageback}
-            src={dave2}
-            alt="David Picture"
-            priority={true}
-          />
+         
         </div>
       </motion.div>
 
@@ -94,7 +87,7 @@ export default function About() {
                 className={styles.hobbyImg}
                 src={hobby}
                 width={450}
-                height={280}
+                height={584}
                 alt="Image of "
               />
              
@@ -102,7 +95,7 @@ export default function About() {
                 className={styles.hobbyImg}
                 src={hobby4}
                 width={450}
-                height={280}
+                height={584}
                 alt="Image of "
               />
               <div className={styles.hobbyTxt}>

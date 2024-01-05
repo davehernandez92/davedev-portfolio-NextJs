@@ -126,8 +126,8 @@ export default function HeroWork() {
                 priority={true}
                 alt="Project Acapulco en la Piel"
                 className={styles.project__img}
-                height={300}
-                width={550}
+                height={619}
+                width={1440}
               />
             </motion.div>
 
@@ -156,8 +156,8 @@ export default function HeroWork() {
                 priority={true}
                 alt="Project Acapulco en la Piel"
                 className={styles.project__img}
-                height={300}
-                width={550}
+                height={619}
+                width={1440}
               />
             </motion.div>
 

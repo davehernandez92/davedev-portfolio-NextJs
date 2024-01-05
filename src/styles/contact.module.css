@@ -11,7 +11,7 @@
     letter-spacing: .01em
 }
 .contact__h1 span {
-    color: var(--primary-orange );
+    color: var(--primary );
 }
 .contact__textWrap{
     display: flex;
@@ -22,11 +22,11 @@
     width: 0.5rem;
     height: 2rem;
     display: inline-block;
-    background-color: var(--secondary-yellow);
+    background-color: var(--secondary);
 }
 
 .contact__subtitle{
-    color: var(--secondary-yellow);
+    color: var(--secondary);
     font-weight: bold;
 }
 .contact__txt{

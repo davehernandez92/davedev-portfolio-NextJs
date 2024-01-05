@@ -1,7 +1,7 @@
 :root {
-  --primary-orange: #c62c2c;
+  --primary: #c62c2c;
   --white: #f4f4f7;
-  --secondary-yellow: #FDB827;
+  --secondary: #FDB827;
   --black: #101014;
   --background: #101014;
   --grey: #333333;
@@ -117,7 +117,7 @@ img{
   font-size: 3rem;
 }
 .loader__title2 {
-  color: var(--primary-orange);
+  color: var(--primary);
   font-size: 3rem;
 }
 
@@ -125,7 +125,7 @@ img{
 
 @media screen and (min-width: 768px) {
   .skillsIcon{
-    width: 6.7rem;
+    width: 7rem;
     height: auto;
   }
 }

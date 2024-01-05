@@ -30,10 +30,10 @@
     width: 0.5rem;
     height: 2rem;
     display: inline-block;
-    background-color: var(--secondary-yellow);
+    background-color: var(--secondary);
 }
 .hero__subtitle{
-    color: var(--secondary-yellow);
+    color: var(--secondary);
     font-weight: bold;
 }
 
@@ -58,13 +58,10 @@
     width: 100%;
     height: auto;
 }
-.imageback{
-    display: none;
-}
+
 
 .main{
     background-color: var(--white);
-    padding-top: 6rem;
     padding: 4rem 1.5rem 0 1.5rem;
 }
 .main p{
@@ -96,8 +93,12 @@
 }
 
 .text__p {
-    line-height: 180%;
+    line-height: 170%;
     font-weight: 400;
+    margin: 3rem 0;
+}
+.link{
+    color: var(--black);
 }
 
 .aboutImg, .hobby__wrap>img {
@@ -119,6 +120,11 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+.hobbyImg{
+    width: 100%;
+    height: auto;
+   
 }
 
 @media screen and (min-width: 768px) {
@@ -154,6 +160,7 @@
         height: auto;
         margin: 0 auto;
     }
+    
 }
 
 @media screen and (min-width: 840px) {
@@ -163,7 +170,7 @@
     }
     .hobbyImg{
         
-        height: auto;
+        
         margin: 2rem auto;
         
     }
@@ -212,22 +219,12 @@
         width: auto;
         top: 25%;
         left: 0;
-        z-index: 2;
-        filter: grayscale(70%);
+        filter: grayscale(0%);
         opacity: 1;
         transition: all .2s ease-in;
     }
-    .image1:hover{
-        opacity: 0;
-    }
-    .imageback{
-        position: absolute;
-        height: 50%;
-        width: auto;
-        left: 0;
-        display: unset;
-        z-index: 1;
-    }
+   
+    
     .heading{
         padding-top: 4rem;
     }
@@ -252,6 +249,10 @@
         justify-content: space-evenly;
        
     }
+    .text__p {
+        
+        margin: 0;
+    }
     .hobby {
         width: 80%;
         margin: 0 auto;
@@ -266,9 +267,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .hobbyImg{
-        min-width: 80%;
+        width: 75%;
         height: auto;
-        margin: 0 auto;
+       
         
     }
     .hobbyTxt{

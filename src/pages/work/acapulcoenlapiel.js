@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/layout";
 import styles from "../../styles/work.module.css";
 import projectImage from "../../../public/images/acapulcoW.png";
-import projectImage2 from "../../../public/images/acapulco/hotel1.webp";
 import projectImage3 from "../../../public/images/acapulco/merch.webp";
 import projectImage4 from "../../../public/images/acapulco/servicios2.webp";
 import projectImage5 from "../../../public/images/acapulco/serviciosM3.webp";
@@ -57,46 +56,44 @@ function Acapulcoenlapiel() {
       </motion.div>
 
       <main className={`section ${styles.main}`}>
-        <div className={styles.briefing}>
-          <motion.h2
-            initial={{ opacity: 0, y: 15 }} // Initial state: invisible
-            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className={styles.title__h2}
-          >
-            The briefing.
-          </motion.h2>
-          <motion.p
-            ref={ref}
-            initial={{ opacity: 0, y: 15 }} // Initial state: invisible
-            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className={styles.briefing__p}
-          >
-            Acapulco En La Piel is a project where Diego aims to promote hotels,
-            restaurants, and services to his YouTube audience, engaging new
-            people and providing advice on the must-visit places when exploring
-            Acapulco, Guerrero.
-          </motion.p>
-        </div>
+        <div className={styles.briefingWrapper}>
+          <div className={styles.briefing}>
+            <motion.h2
+              initial={{ opacity: 0, y: 15 }} // Initial state: invisible
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className={styles.title__h2}
+            >
+              The briefing.
+            </motion.h2>
+            <motion.p
+              ref={ref}
+              initial={{ opacity: 0, y: 15 }} // Initial state: invisible
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className={styles.briefing__p}
+            >
+              Acapulco En La Piel is a project where Diego aims to promote
+              hotels, restaurants, and services to his YouTube audience,
+              engaging new people and providing advice on the must-visit places
+              when exploring Acapulco, Guerrero.
+            </motion.p>
+          </div>
 
-        <motion.div
-          className={styles.image__div}
-          initial={{ opacity: 0, y: 15 }} // Initial state: invisible
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
-          transition={{ delay: 0.6, duration: 0.6 }}
-        >
-          <Image
-            src={projectImage2}
-            alt="Acapulco en la piel Screenshot"
-            className={styles.project__img}
-          />
-          <Image
-            src={projectImage3}
-            alt="Acapulco en la piel Screenshot"
-            className={styles.project__img}
-          />
-        </motion.div>
+          <motion.div
+            className={styles.image__div}
+            initial={{ opacity: 0, y: 15 }} // Initial state: invisible
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 15 }} // Animation state: visible if in view, otherwise invisible and y position at -15
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            <Image
+              src={projectImage3}
+              alt="Acapulco en la piel Screenshot"
+              className={styles.project__img}
+            />
+          </motion.div>
+        </div>
+        
         <motion.div
           className={styles.imgfull__wrapper}
           ref={ref2}
@@ -108,6 +105,9 @@ function Acapulcoenlapiel() {
             src={projectImage4}
             alt="Acapulco en la piel S+creenshot"
             className={styles.project__imgfull}
+            width={1920}
+            height={1280}
+            
           />
         </motion.div>
 

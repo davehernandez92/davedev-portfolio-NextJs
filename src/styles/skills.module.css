@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     
+    
 }
 @media screen and (min-width: 568px) {
     .skillSection{
@@ -31,6 +32,9 @@
     
     .skills__heading{
         font-size: 3rem;
+    }
+    .skillset{
+        width: 75%;
     }
 
     
