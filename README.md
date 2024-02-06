@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+![Logo](https://res.cloudinary.com/dtsowbfck/image/upload/v1707181992/logo-allan_twiits.svg)
+
+
+# Allan Banuelos Photography Website
+
+Welcome to the readme file for this project, a website tailored for a wedding photographer based in the picturesque destination of Acapulco, Mexico. The development of this site leverages the power of Next.js, Cloudinary, CSS Modules, Tailwind CSS and Framer Motion to create a visually stunning and highly performant online presence.
+
+
+## Performance-Driven Design with Next.js 
+
+
+The choice of Next.js as the framework for this project stems from its exceptional performance, particularly in handling images. With server-side rendering and optimized image loading capabilities, Next.js ensures that your website not only looks stunning but also delivers a seamless user experience with fast-loading images, vital for a photography portfolio.
+
+
+
+
+## Automated Email Acknowledgment:
+
+Enhancing client communication, the website incorporates an automated email reply system. When a potential client reaches out through the contact form, they will promptly receive an acknowledgment email. This feature adds a personal touch to the user experience, assuring clients that their messages have been received and are being attended to.
+## Demo
+
+https://allan-photographer.vercel.app/
+
+
 
 ## Getting Started
 
@@ -12,27 +36,3 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
