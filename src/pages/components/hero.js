@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import image1 from "../../../public/images/acapulcoEnlaPiel.webp";
+import image1 from "../../../public/images/allan/allanPhoto.webp";
 import styles from "../../styles/hero.module.css";
 
 export default function Hero() {
@@ -92,7 +92,7 @@ export default function Hero() {
           initial="third"
           animate={startAnimation ? "aligned3" : "third"}
         >
-          Website developed for a tourism Youtuber based in Acapulco Guerrero.
+          Website developed for a Wedding photographer in Acapulco Guerrero.
         </motion.p>
       </motion.div>
 
@@ -103,11 +103,11 @@ export default function Hero() {
         animate={startAnimation ? "aligned4" : "fourth"}
       >
         <aside className={styles.project__wrapper}>
-          <Link href="/work/acapulcoenlapiel">
+          <Link href="/work/allanbanuelos">
             <Image
               className={styles.projectImage}
               src={image1}
-              alt="Acapulco en la piel project"
+              alt="Allan Banuelos project"
             />
             <motion.div
               className={styles.viewProject}

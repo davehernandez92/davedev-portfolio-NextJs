@@ -113,7 +113,7 @@
        
       }
       .briefing__p, .solution__p{
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
       }
       .image__div{
         display: flex;
@@ -122,31 +122,25 @@
       }
     
       .project__img{
-        margin: 0 auto;
+        margin: 0 auto 5rem auto;
         width: auto;
-        height: 320px;
+        height: auto;
+        
       }
     
-      .project__imgfull{
-        width: auto;
-        height: 320px;
-        display: flex;
-        margin: 5rem auto 8rem auto;
-      }
+      
 
       .solution{
         display: flex;
         flex-direction: column-reverse;
       }
 
-      .solution__wrapper{
-        margin-top: 8rem;
-      }
+     
 
       .solution__img{
-        margin: 0 auto;
+        margin: 3rem auto;
         width: auto;
-        height: 640px;
+        height: auto
       
       }
 
@@ -189,6 +183,10 @@
     .main {
         padding: 9rem 5%;
     }
+    .project__img{
+        width: 100%;
+        
+      }
   }
 
  
@@ -240,7 +238,7 @@
     }
 
     .projectImage{
-        width: 300px;
+        width: 380px;
         height: 300px;
     }
    
@@ -254,6 +252,14 @@
         flex-direction: row;
         gap: 3%;
     }
+    .solutionWrapper{
+        padding: 12rem 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 3%;
+        
+    }
     .briefing {
         width: 80%;
         padding-top: 10rem;
@@ -261,7 +267,13 @@
         margin: 0 0 8rem 0;
     }
     .title__h2{
-        font-size: 3rem;  
+        font-size: 4rem; 
+        margin-bottom: 1rem; 
+    }
+    .challenge{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .image__div{
@@ -271,10 +283,7 @@
         
     }
 
-    .project__img{
-        width: 80%;
-        height: 80%;
-    }
+    
     .project__imgfull{
         width: auto;
         height: auto;
@@ -291,7 +300,7 @@
     }
     
     .solution__img{
-        width: 45%;
+        width: 50%;
         height: auto;
         margin-right: 5%;
     }

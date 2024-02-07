@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 
 import acapulco from '../../../public/images/acapulco.png'
+import allan from '../../../public/images/allan/logo-allan.svg'
 import styles from '../../styles/customers.module.css'
 
 export default function Customers() {
@@ -35,11 +36,11 @@ export default function Customers() {
               height={80}
             />
             <Image
-              className={styles.projectImage}
-              src={acapulco}
-              alt="Acapulco en la piel logo"
-              width={80}
-              height={80}
+              className={styles.projectImage2}
+              src={allan}
+              alt="Allan Wedding photo logo"
+              width={300}
+              height={150}
             />
             <Image
               className={styles.projectImage}
