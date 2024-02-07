@@ -42,20 +42,7 @@ export default function Customers() {
               width={300}
               height={150}
             />
-            <Image
-              className={styles.projectImage}
-              src={acapulco}
-              alt="Acapulco en la piel logo"
-              width={80}
-              height={80}
-            />
-            <Image
-              className={styles.projectImage}
-              src={acapulco}
-              alt="Acapulco en la piel logo"
-              width={80}
-              height={80}
-            />
+           
         </motion.ul>
       </motion.div>
     </div>
