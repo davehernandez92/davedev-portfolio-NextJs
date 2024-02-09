@@ -62,7 +62,7 @@
 
 .main{
     background-color: var(--white);
-    padding: 4rem 1.5rem 0 1.5rem;
+    padding: 4rem 1.5rem 3rem 1.5rem;
 }
 .main p{
     color: var(--black);
@@ -121,6 +121,11 @@
     flex-direction: column;
     gap: 3rem;
 }
+.hobbyTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .hobbyImg{
     width: 100%;
     height: auto;
@@ -160,6 +165,12 @@
         height: auto;
         margin: 0 auto;
     }
+    .hobbyTxt{
+        gap: 3rem;
+    }
+    .hobbyTxt h1 {
+        padding: 0 3.5rem;
+    }
     
 }
 
@@ -184,21 +195,18 @@
         
     }
     .container__wrapper{
-        width: 45%;
+        width:50%;
+        display: flex;
+        justify-content: center;
 
-        position: relative;
     }
     .hero__container{
-        margin: 0 0 0 28%;
+        
         padding: 0;
         width: 70%;
-        height: 50%;
-        position: absolute;
-        top: 25%;
-        
-        
-       
-        
+        display: flex;
+        justify-content: center;
+
     }
     .hero__h1{
         font-size: 4rem;
@@ -209,16 +217,12 @@
     }
     .images{
         margin: 0;
-        width: 55%;
-        height: 100%;
-        position: relative;
+        width: 50%;
+        
+       
     }
     .image1{
-        position: absolute;
-        height: 50%;
-        width: auto;
-        top: 25%;
-        left: 0;
+       
         filter: grayscale(0%);
         opacity: 1;
         transition: all .2s ease-in;
@@ -239,9 +243,7 @@
         grid-template-columns: repeat(2, 1fr);  
     }
 
-    .aboutImg{
-        width: 90%;
-    }
+    
 
     .about__txt_wrapper{
         display: flex;
@@ -258,8 +260,7 @@
         margin: 0 auto;
     }
     .hobby__wrap h1{
-        width: 50%;
-        margin: 0 auto 0 2.5%;
+        width: 100%
         
     }
     .image__div{
@@ -276,6 +277,10 @@
         width: 80%;
         margin: 0 auto;
     }
+    .hobbyTxt h1 {
+        
+    }
+    
     .link{
         color: var(--black);
     }

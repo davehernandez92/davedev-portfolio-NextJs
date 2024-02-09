@@ -150,12 +150,11 @@ function Allanbanuelos() {
               transition={{ delay: 0.2, duration: 0.4 }}
               className={styles.solution__p}
             >
-              I utilized Next.js for the front-end and chose Strapi as the
-              back-end solution to address the customer's needs. Strapi's ease
-              of setup and user-friendly interface played a key role in the
-              decision. This project remains a work in progress as we strive to
-              meet Diego's request for a beta version to be launched promptly.
+             The decision to employ Next.js as the framework for Allan's website was influenced by its capacity to address the unique challenge of image optimization. Faced with the intricate task of reconciling the desire for a fast-loading site with Allan's portfolio containing heavy, pixel-dense images, Next.js emerged as a strategic choice.
+              
+             
             </motion.p>
+            
           </div>
 
           <Image

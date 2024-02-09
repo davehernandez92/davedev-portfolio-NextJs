@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { useInView } from "react-intersection-observer";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -37,8 +37,8 @@ export default function About() {
             className={styles.image1}
             src={dave1}
             alt="David Picture"
-            height={1600}
-            width={1200}
+            height={1050}
+            width={800}
             priority={true}
           />
          
@@ -55,6 +55,8 @@ export default function About() {
             src={about}
             alt="David Hernandez"
             className={styles.aboutImg}
+            height={540}
+            width={540}
           />
           <div className={styles.about__txt_wrapper}>
             <p className={`${styles.text__p} ${styles.text} `}>
@@ -75,34 +77,29 @@ export default function About() {
 
         <div className={styles.hobby}>
           <div className={styles.hobby__wrap}>
-            <h1> When I'm not working, I'm doing something else.</h1>
+            
             <div className={styles.image__div}>
               
               <div className={styles.hobbyTxt}>
-                <p>
-                  loremipsum 
-                </p>
+              <h1> When I'm not working, I'm doing something else.</h1>
+                
+                  <p>
+                  When I'm not caught up in the tech world, you'll catch me living life in all its flavors. Whether I'm snapping pics, checking out new spots, or just enjoying a good cup of coffee, these are the things that keep me ticking. Canada's become my playground, soaking up nature's beauty and diving into outdoor adventures.
+                  </p>
+                  <p>
+                  Family time? That's my treasure. Hanging out with my loved ones is where the real magic happens. And you know, I try to keep things balanced – a bit of screen time, a bit of real-world action. Reading and squeezing in some workouts help keep the vibe positive. Life's a mixtape of moments, and I'm all about savoring every beat.
+                  </p>
+               
               </div>
               <Image
                 className={styles.hobbyImg}
                 src={hobby}
-                width={450}
-                height={584}
+                width={600}
+                height={800}
                 alt="Image of "
               />
              
-              <Image
-                className={styles.hobbyImg}
-                src={hobby4}
-                width={450}
-                height={584}
-                alt="Image of "
-              />
-              <div className={styles.hobbyTxt}>
-                <p>
-                  loremipsum
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>

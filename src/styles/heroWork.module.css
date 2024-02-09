@@ -173,20 +173,25 @@
     }
 
     .project__wrap{
-      width: 75%;
+      max-width: 800px;
       height: 100%;
       margin: 2rem auto;
      
     }
+    .project__wrapLink{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
     .img__div{
-      position: relative;
-      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
     .project__img{
-      width: 100%;
-      height: 350px;
-      aspect-ratio: 1.85/1;
       
+      height: auto;
+      margin: 0 auto;
 
     }
 

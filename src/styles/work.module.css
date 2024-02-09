@@ -247,13 +247,13 @@
         flex-direction: row;
     }
     .briefingWrapper{
-        padding: 12rem 0;
+        padding: 12rem 0 0 0;
         display: flex;
         flex-direction: row;
         gap: 3%;
     }
     .solutionWrapper{
-        padding: 12rem 0;
+        padding: 8rem 0;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -291,7 +291,7 @@
     
     .solution{
         flex-direction: row-reverse;
-        margin: 4rem 0 8rem 0;
+        margin: 4rem 0 12rem 0;
         
     }
     .solution__wrapper{

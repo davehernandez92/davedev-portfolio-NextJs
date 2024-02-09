@@ -4,18 +4,19 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
-import acapulco from "../../../public/images/acapulcoEnlaPiel.jpg";
+import acapulco from "../../../public/images/acapulcoEnlaPiel.webp";
+import allan from "../../../public/images/allan/allanPhoto.webp";
 
 import styles from "../../styles/heroWork.module.css";
 
 export default function HeroWork() {
   const [isClicked, setIsClicked] = useState(false);
-  
+
   const ref1 = useRef(null);
   const isInView = useInView(ref1, { once: true });
   const ref2 = useRef(null);
   const isInView2 = useInView(ref2, { once: true });
-  
+
 
 
   const handleClick = () => {
@@ -27,11 +28,11 @@ export default function HeroWork() {
         section.scrollIntoView({ behavior: "smooth" });
       }
     }, 1000);
-   
+
     setTimeout(() => {
       setIsClicked(false);
     }, 2000);
-    
+
   };
 
   const animateVariants = {
@@ -48,7 +49,7 @@ export default function HeroWork() {
     animate: { opacity: 0, y: 15 },
     initial: { opacity: 1, y: 0 },
   };
-  
+
 
   return (
     <>
@@ -126,19 +127,21 @@ export default function HeroWork() {
                 priority={true}
                 alt="Project Acapulco en la Piel"
                 className={styles.project__img}
-                height={619}
-                width={1440}
+                height={550}
+                width={800}
               />
             </motion.div>
 
-            <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
-            <div className={styles.project__stack}>
-              <p className={styles.project__text}>Next.js</p>
-              <p className={styles.project__text}>Strapi</p>
-              <p className={styles.project__text}>CSS modules</p>
-            </div>
+            <div>
+              <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
+              <div className={styles.project__stack}>
+                <p className={styles.project__text}>Next.js</p>
+                <p className={styles.project__text}>Strapi</p>
+                <p className={styles.project__text}>CSS modules</p>
+              </div>
 
-            <p className={`${styles.project__view}`}>View Project</p>
+              <p className={`${styles.project__view}`}>View Project</p>
+            </div>
           </Link>
         </motion.div>
 
@@ -149,26 +152,27 @@ export default function HeroWork() {
           animate={isInView2 ? { opacity: 1, y: 0 } : ""}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Link href={"/work/acapulcoenlapiel"} className={styles.project__wrapLink}>
+          <Link href={"/work/allanbanuelos"} className={styles.project__wrapLink}>
             <motion.div className={styles.img__div}>
               <Image
-                src={acapulco}
+                src={allan}
                 priority={true}
-                alt="Project Acapulco en la Piel"
+                alt="Project Allan Banuelos"
                 className={styles.project__img}
-                height={619}
-                width={1440}
+                height={534}
+                width={800}
               />
             </motion.div>
+            <div>
+              <h2 className={styles.project__title}>Allan Banuelos Wedding Photographer. </h2>
+              <div className={styles.project__stack}>
+                <p className={styles.project__text}>Next.js</p>
+                <p className={styles.project__text}>Tailwind</p>
+                <p className={styles.project__text}>Framer Motion</p>
+              </div>
 
-            <h2 className={styles.project__title}>Acapulco en la Piel. </h2>
-            <div className={styles.project__stack}>
-              <p className={styles.project__text}>Next.js</p>
-              <p className={styles.project__text}>Strapi</p>
-              <p className={styles.project__text}>CSS modules</p>
+              <p className={`${styles.project__view}`}>View Project</p>
             </div>
-
-            <p className={`${styles.project__view}`}>View Project</p>
           </Link>
         </motion.div>
       </motion.div>
