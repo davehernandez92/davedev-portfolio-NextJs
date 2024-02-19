@@ -210,7 +210,7 @@ export default function Navbar() {
         const sectionTop = section.offsetTop - navbarHeight;
         const sectionBottom = sectionTop + section.offsetHeight;
   
-        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
+        if (scrollY >= sectionTop && scrollY < sectionBottom) {
           setIsOnSection(true);
           return;
         }

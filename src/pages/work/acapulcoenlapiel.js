@@ -38,7 +38,7 @@ function Acapulcoenlapiel() {
           </p>
 
           <button className={styles.button}>
-            <Link target="blank" href={"https://www.acapulcoenlapiel.com/"}> Visit Site </Link>
+            <Link target="blank" href={"https://acapulco-enla-piel.vercel.app/"}> Visit Site </Link>
           </button>
         </div>
 
