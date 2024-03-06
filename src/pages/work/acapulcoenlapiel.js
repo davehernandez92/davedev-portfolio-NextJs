@@ -7,8 +7,8 @@ import Image from "next/image";
 import Layout from "../components/layout";
 import styles from "../../styles/work.module.css";
 import projectImage from "../../../public/images/acapulcoW.png";
-import projectImage3 from "../../../public/images/acapulco/merch.webp";
-import projectImage5 from "../../../public/images/acapulco/serviciosM3.webp";
+import projectImage3 from "../../../public/images/acapulco/acaPielLap.png";
+import projectImage5 from "../../../public/images/acapulco/acapielPhone.png";
 import leftA from "../../../public/icons/left-chev.svg";
 import rightA from "../../../public/icons/right-chev.svg";
 
@@ -154,8 +154,8 @@ function Acapulcoenlapiel() {
             src={projectImage5}
             alt="Acapulco en la piel Screenshot"
             className={styles.solution__img}
-            width={320}
-            height={320}
+            width={395}
+            height={829}
           />
         </div>
         <div className={styles.buttons__div}>

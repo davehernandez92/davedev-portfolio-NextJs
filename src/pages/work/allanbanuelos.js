@@ -7,9 +7,9 @@ import Image from "next/image";
 import Layout from "../components/layout";
 import styles from "../../styles/work.module.css";
 import projectImage from "../../../public/images/allan/logo-allanw.svg";
-import projectImage2 from "../../../public/images/allan/allanPhoto.webp";
+import projectImage2 from "../../../public/images/allan/allanlap.png";
 
-import projectImage3 from "../../../public/images/allan/allanGale.webp";
+import projectImage3 from "../../../public/images/allan/allanPhone.png";
 import leftA from "../../../public/icons/left-chev.svg";
 import rightA from "../../../public/icons/right-chev.svg";
 
@@ -29,7 +29,7 @@ function Allanbanuelos() {
           </p>
 
           <button className={styles.button}>
-            <Link target="blank" href={"https://allan-photographer.vercel.app/"}>
+            <Link target="blank" href={"https://www.allanbanuelos.com/"}>
               {" "}
               Visit Site{" "}
             </Link>
@@ -161,8 +161,8 @@ function Allanbanuelos() {
             src={projectImage3}
             alt="Acapulco en la piel Screenshot"
             className={styles.solution__img}
-            width={900}
-            height={400}
+            width={230}
+            height={490}
           />
         </div>
         <div className={styles.buttons__div}>
