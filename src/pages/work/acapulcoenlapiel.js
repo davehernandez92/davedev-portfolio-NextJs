@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 import styles from "../../styles/work.module.css";
 import projectImage from "../../../public/images/acapulcoW.png";
 import projectImage3 from "../../../public/images/acapulco/acaPielLap.png";
-import projectImage5 from "../../../public/images/acapulco/acapielPhone.png";
+import projectImage5 from "../../../public/images/acapulco/acaPielPhone.png";
 import leftA from "../../../public/icons/left-chev.svg";
 import rightA from "../../../public/icons/right-chev.svg";
 
